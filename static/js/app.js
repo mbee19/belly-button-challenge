@@ -49,8 +49,8 @@ function buildCharts(subjectID, data) {
   };
 
   let layout1 = {
-    width: 900, 
-    height: 500,
+    width: 1200, 
+    height: 600,
     title: "Bacteria Cultures Per Sample",
     xaxis: {
       title: "OTU ID"
@@ -80,7 +80,8 @@ function buildCharts(subjectID, data) {
   };
 
   let layout2 = {
-    width: 750,
+    width: 900,
+    height: 400,
     title: `Top 10 Bacteria Cultures Found in Subject ${subjectID}`,
     xaxis: {
       title: "Number of Bacteria"
