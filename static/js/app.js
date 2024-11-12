@@ -68,9 +68,7 @@ function buildCharts(subjectID, data) {
   let otuNames = otuIDs.map(id => "OTU " + id);
   // Slice top 10 highest sample values for bar chart (already sorted in data), reverse to show up correctly in bar chart
   let sampleValuesSliced = sampleValues.slice(0,10).reverse();
-  console.log(sampleValuesSliced);
   let otuNamesSliced = otuNames.slice(0, 10).reverse();
-  console.log(otuNamesSliced);
   let otuLabelsSliced = otuLabels.slice(0, 10).reverse();
   // Build a Bar Chart
   let trace2 = {
@@ -96,8 +94,6 @@ function buildCharts(subjectID, data) {
   Plotly.newPlot('bar', data2, layout2);
 
 }
-
-
 
 // Function for event listener
 function optionChanged(newSubjectID) {
